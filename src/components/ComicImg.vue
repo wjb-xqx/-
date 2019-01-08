@@ -137,7 +137,15 @@ export default {
     >img{
         width: 100%;
         height: 100%;
-        opacity: .7;
+        position: relative;
+        &::before{
+            content:'';
+            opacity: 0.1;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+        }
     }
     >.content{
         position: absolute;

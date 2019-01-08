@@ -1,8 +1,10 @@
 <template>
     <div class="Recommend">
         <!-- 节日祝福 -->
-        <div class="happy">
-            <img src="@/assets/images/推荐1_r2_c1.jpg" alt="">
+        <div class="b">
+            <div class="item" v-for="(item,index) in listImg" :key="index">
+                <img :src="item.url" alt="">
+            </div>
         </div>
         <ul class="recommendUser clearfix">
             <li class="clearfix">
@@ -100,7 +102,23 @@ export default {
     name:'Recommend',
     data(){
         return{
-            isshow:false
+            isshow:false,
+            listImg:[{
+                     id:1,
+                     url:require('../../assets/images/dongman.jpg')
+                 },{
+                     id:2,
+                     url:require('../../assets/images/dongman.jpg')
+                 },{
+                     id:3,
+                     url:require('../../assets/images/dongman.jpg')
+                 },{
+                     id:4,
+                     url:require('../../assets/images/dongman.jpg')
+                 },{
+                     id:5,
+                     url:require('../../assets/images/dongman.jpg')
+            }]
         }
     },
     methods:{
@@ -117,15 +135,24 @@ export default {
 <style lang="less" scoped>
 .Recommend{
     margin:  1.3rem 0;
-    // 节日祝福
-    .happy{
+    .b{
+        height: 1.5rem;
+        display: -webkit-box;
+        overflow-x: scroll;
+        // -webkit-overflow-scrolling:touch;
         padding: 0 10/50rem;
-        >img{
-            width: 100%;
+        .item{
+            margin-right: 5/50rem;
+        }
+        img{
+            width: 2rem;
+            height: 1.5rem;
+            border-radius: 12/50rem;
+            float: left;
         }
     }
     >.recommendUser{
-        margin-top: 10/50rem;
+        margin-top: 25/50rem;
         >li{
             padding: 0 10/50rem;
             >.user{

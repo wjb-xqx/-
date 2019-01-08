@@ -9,11 +9,11 @@
 import comFooter from '@/components/footer';
 import comUserPage from '@/components/userPage/userPage';
 export default {
-    
      components:{
          comFooter,
          comUserPage
-     }
+     },
+     
 }
 </script>
 

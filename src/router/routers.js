@@ -93,8 +93,44 @@ export default [{
         },
         component: r => require.ensure([], () => r(require('@/views/edition/createEdition'))),
     },
-
-    
+    {
+        path: '/TvDetails',
+        meta: {
+            title: 'Tv视频详情',
+            keepAlive: false
+        },
+        component: r => require.ensure([], () => r(require('@/components/details/TvDetails'))),
+        children:[{
+            path:'/TvDetails',
+            meta: {
+                title: '全部回复',
+                keepAlive: false
+            },
+            component: r => require.ensure([], () => r(require('@/components/details/replyAll'))),
+        },{
+            path:'/replyAll',
+            meta: {
+                title: '全部回复',
+                keepAlive: false
+            },
+            component: r => require.ensure([], () => r(require('@/components/details/replyAll'))),
+        },{
+            path:'/tvRecommend',
+            meta: {
+                title: '相关推荐',
+                keepAlive: false
+            },
+            component: r => require.ensure([], () => r(require('@/components/details/tvRecommend'))),
+        }]
+    },
+    {
+        path: '/comment',
+        meta: {
+            title: '评论',
+            keepAlive: false
+        },
+        component: r => require.ensure([], () => r(require('@/components/details/comment'))),
+    },
     {
         path: '/setInfo',
         meta: {
@@ -187,7 +223,6 @@ export default [{
         },
         component: r => require.ensure([], () => r(require('@/components/header/list_one/History'))),
     },
-    
     {
         path: '/edition',
         meta: {
