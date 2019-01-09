@@ -13,19 +13,19 @@
                 </div>
             </div>
             <ul class="list_two">
-                <li v-for="(item,index) in list" :key="index">
+                <router-link tag="li" :to="'/myFriendList/' + item.id" v-for="(item,index) in list" :key="index">
                     {{item.name}}
                     <span class="fr">
                         <van-icon name="arrow" />
                     </span>
-                </li>
+                </router-link>
             </ul>
             <h3>最近聊天</h3>
             <ul class="list_two list">
-                <li v-for="(item,index) in list" :key="index">
+                <router-link tag="li" to="/chatPage" v-for="(item,index) in list" :key="index">
                     <img src="@/assets/images/tup.jpg" alt="">
                     {{item.name}}
-                </li>
+                </router-link>
             </ul>
         </div>
     </div>

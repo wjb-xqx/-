@@ -32,7 +32,7 @@
             <router-link tag="div" to="/searchEdition" class="icon" v-show="editionTitle">
                 <i class="iconfont">&#xe6a8;</i>
             </router-link>
-             <router-link tag="div" to="/" class="icon" v-show="myTitle">
+             <router-link tag="div" to="/Myfriend" class="icon" v-show="myTitle">
                 <i class="iconfont">&#xe605;</i>
             </router-link>
         </div>

@@ -29,8 +29,8 @@
             </ul>
             <ul class="item clearfix">
                 <router-link tag="li" to="/automatic">自动回复<van-icon name="arrow" /></router-link>
-                <router-link tag="li" to="/chatInfo">私信弹弹娘<van-icon name="arrow" /></router-link>
-                <router-link tag="li" to="/chatInfo">私信弹弹妹<van-icon name="arrow" /></router-link>
+                <router-link tag="li" to="/chatPage">私信弹弹娘<van-icon name="arrow" /></router-link>
+                <router-link tag="li" to="/chatPage">私信弹弹妹<van-icon name="arrow" /></router-link>
             </ul>
             <ul class="item clearfix">
                 <router-link tag="li" to="convention">用户公约 <van-icon name="arrow" /></router-link>

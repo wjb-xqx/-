@@ -44,29 +44,50 @@
                 </li>
             </ul>
             <van-tabs v-model="active">
-                <van-tab title="资料">内容 1</van-tab>
+                <van-tab title="资料">
+                   <my-info></my-info>
+                </van-tab>
                 <van-tab title="动态">
                     <div class="dynamic">
                         <span>帖子</span>
                         <span>动态</span>
                         <span>图墙</span>
                     </div>
+                    <div class="content">
+                        <dynamic></dynamic>
+                        <post-page></post-page>
+                        <map></map>
+                    </div>
                 </van-tab>
-                <van-tab title="收藏">内容 3</van-tab>
-                <van-tab title="留言">内容 4</van-tab>
+                <van-tab title="收藏">
+                    <my-collection></my-collection>
+                </van-tab>
+                <van-tab title="留言">暂无留言</van-tab>
             </van-tabs>
         </div>
     </div>
 </template>
 
 <script>
+import myInfo from './myInfo'
+import PostPage from './PostPage'
+import dynamic from './dynamic'
+import Map from './Map'
+import myCollection from '@/components/header/collection/myCollection'
 export default {
      data() {
         return {
           active: 0,
-           activeName: ''
+           activeName: '',
         };
      },
+     components:{
+         myInfo,
+         myCollection,
+         PostPage,
+         dynamic,
+         Map
+     }
 }
 </script>
 

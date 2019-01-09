@@ -56,8 +56,17 @@ export default [{
             title: '感兴趣的弹友',
             keepAlive: false
         },
-        component: r => require.ensure([], () => r(require('@/components/ComicImg'))),
+        component: r => require.ensure([], () => r(require('@/components/comic/ComicImg'))),
     },{
+        path: '/ComList',
+        meta: {
+            title: '感兴趣的弹友',
+            keepAlive: false
+        },
+        component: r => require.ensure([], () => r(require('@/components/comic/ComList'))),
+    },
+    
+    {
         path: '/searchList',
         meta: {
             title: '首页搜索',
@@ -262,6 +271,21 @@ export default [{
         },
         component: r => require.ensure([], () => r(require('@/views/chat/chat'))),
     },{
+        path: '/Myfriend',
+        meta: {
+            title: '我的弹友',
+            keepAlive: false
+        },
+        component: r => require.ensure([], () => r(require('@/views/chat/Myfriend'))),
+    },{
+        path: '/myFriendList/:id',
+        meta: {
+            title: '',
+            keepAlive: false
+        },
+        component: r => require.ensure([], () => r(require('@/views/chat/myFriendList'))),
+    }
+    ,{
         path: '/SystemInfo',
         meta: {
             title: '系统消息',
@@ -297,21 +321,13 @@ export default [{
            keepAlive: false
        },
        component: r => require.ensure([], () => r(require('@/views/User/User'))),
+    },
+    {
+        path: '/chatPage',
+        meta: {
+            title: '聊天页面',
+            keepAlive: false
+        },
+        component: r => require.ensure([], () => r(require('@/components/chatPage/chatPage'))),
     }
-    
-    //  {
-    //     path: '/Information',
-    //     meta: {
-    //         title: '消息',
-    //         keepAlive: false
-    //     },
-    //     component: r => require.ensure([], () => r(require('@/views/Information/Information')))
-    // },{
-    //     path: '/User',
-    //     meta: {
-    //         title: '个人中心',
-    //         keepAlive: false
-    //     },
-    //     component: r => require.ensure([], () => r(require('@/views/User/User')))
-    // },
 ]

@@ -34,7 +34,7 @@
                  </router-link>
             </ul>
             <ul class="info clearfix">
-                <li v-for="(item,index) in list" :key="index">
+                <router-link tag="li" to="/chatPage" v-for="(item,index) in list" :key="index">
                     <div class="img">
                         <img :src="item.url" alt="">
                     </div>
@@ -45,7 +45,7 @@
                     <div class="time">{{item.time}}天前
                         <p class="fr" v-show="item.Unread">{{item.Unread}}</p>
                     </div>
-                </li>
+                </router-link>
             </ul>
        </div>
        <com-footer></com-footer>

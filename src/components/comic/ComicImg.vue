@@ -22,7 +22,7 @@
             <i class="iconfont" @click='prev'>&#xe602;</i>
              动漫美图
             <span class="fr post"><i class="iconfont">&#xe62c;</i></span>
-            <span class="fr post"><i class="iconfont">&#xe6a8;</i></span>
+            <router-link tag="div" to="/ComList" class="fr post"><i class="iconfont">&#xe6a8;</i></router-link>
         </div>
         <!-- 导航 -->
         <van-tabs v-model="active">
@@ -102,19 +102,19 @@ export default {
           active: 0,
           userList:[{
                 id:1,
-                url:require('../assets/images/tup.jpg'),
+                url:require('../../assets/images/tup.jpg'),
                 title:'进度条菌',
                 time:'4',
                 text:'游园惊梦 这是我见过的最想的妖姬了',
             },{
                 id:2,
-                url:require('../assets/images/tup.jpg'),
+                url:require('../../assets/images/tup.jpg'),
                 title:'区区俗人',
                 time:'4',
                 text:'游园惊梦 这是我见过的最想的妖姬了',
             },{
                 id:3,
-                url:require('../assets/images/tup.jpg'),
+                url:require('../../assets/images/tup.jpg'),
                 title:'进度条菌',
                 time:'4',
                 text:'游园惊梦 这是我见过的最想的妖姬了',

@@ -1,13 +1,12 @@
 <template>
     <div class="Recommend">
-        <!-- 节日祝福 -->
-        <div class="b">
-            <div class="item" v-for="(item,index) in listImg" :key="index">
+        <van-swipe  :width="120">
+            <van-swipe-item v-for="(item,index) in listImg" :key="index">
                 <img :src="item.url" alt="">
-            </div>
-        </div>
+            </van-swipe-item>
+        </van-swipe>
         <ul class="recommendUser clearfix">
-            <li class="clearfix">
+            <router-link tag="li" to="/TvDetails" class="clearfix">
                 <div class="user">
                     <img src="@/assets/images/tup.jpg" alt="" class="fl">
                     <div class="title fl">
@@ -41,8 +40,8 @@
                     <li><i class="iconfont">&#xe69f;</i>888</li>
                     <li><i class="iconfont">&#xe6ac;</i>666</li>
                 </ul>
-            </li>
-            <li>
+            </router-link>
+            <router-link tag="li" to="/TvDetails" >
                 <div class="user">
                     <img src="@/assets/images/tup.jpg" alt="" class="fl">
                     <div class="title fl">
@@ -75,7 +74,7 @@
                     <li><i class="iconfont">&#xe69f;</i>888</li>
                     <li><i class="iconfont">&#xe6ac;</i>666</li>
                 </ul>
-            </li>
+            </router-link>
         </ul>
         <!-- 分享页面 -->
         <transition name="s">
@@ -135,22 +134,15 @@ export default {
 <style lang="less" scoped>
 .Recommend{
     margin:  1.3rem 0;
-    .b{
-        height: 1.5rem;
-        display: -webkit-box;
-        overflow-x: scroll;
-        // -webkit-overflow-scrolling:touch;
-        padding: 0 10/50rem;
-        .item{
-            margin-right: 5/50rem;
-        }
         img{
             width: 2rem;
             height: 1.5rem;
             border-radius: 12/50rem;
-            float: left;
+            margin-right: .2rem;
         }
-    }
+        /deep/.van-swipe__indicators{
+            display: none;
+        }
     >.recommendUser{
         margin-top: 25/50rem;
         >li{
