@@ -1,6 +1,6 @@
 <template>
     <div class="topic">
-        <navbar title="我的下载"></navbar>
+        <nav-bar title="我的下载"></nav-bar>
         <div class="main">
             <ul>
                 <li>
@@ -15,10 +15,10 @@
 </template>
 
 <script>
-import navbar from '../../navbar/navbar'
+import navBar from '../../navBar/navBar'
 export default {
     components:{
-        navbar
+        navBar
     }
 }
 </script>

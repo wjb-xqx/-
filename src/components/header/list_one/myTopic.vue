@@ -1,6 +1,6 @@
 <template>
     <div class="topic">
-        <navbar title="我的话题"></navbar>
+        <nav-bar title="我的话题"></nav-bar>
         <div class="main">
             暂无话题
         </div>
@@ -8,10 +8,10 @@
 </template>
 
 <script>
-import navbar from '../../navbar/navbar'
+import navBar from '../../navBar/navBar'
 export default {
     components:{
-        navbar
+        navBar
     }
 }
 </script>

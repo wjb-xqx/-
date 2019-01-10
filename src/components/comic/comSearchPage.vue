@@ -3,7 +3,7 @@
         <form action="/">
             <van-search
               v-model="value"
-              placeholder="搜索用户、视频、内容"
+              placeholder="帖子标签、关键词"
               show-action
               @cancel="onCancel"
              />
@@ -19,13 +19,6 @@
                 <span>QQ美化</span>
                 <span>火之迷恋</span>
             </div>
-            <router-link  tag="div" to="/rankingList" class="Ranking">
-                <span class="fl iconfont">&#xe65f;</span>
-                排名榜
-                <span class="fr">
-                    <van-icon name="arrow" />
-                </span>
-            </router-link>
         </div>
     </div>
 </template>

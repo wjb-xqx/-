@@ -21,8 +21,12 @@
         <div class="return clearfix">
             <i class="iconfont" @click='prev'>&#xe602;</i>
              动漫美图
-            <span class="fr post"><i class="iconfont">&#xe62c;</i></span>
-            <router-link tag="div" to="/ComList" class="fr post"><i class="iconfont">&#xe6a8;</i></router-link>
+            <router-link tag="div" to="/ComList" class="fr post">
+                <i class="iconfont">&#xe62c;</i>
+            </router-link>
+            <router-link tag="div" to="/comSearchPage" class="fr post">
+                <i class="iconfont">&#xe6a8;</i>
+            </router-link>
         </div>
         <!-- 导航 -->
         <van-tabs v-model="active">
@@ -84,10 +88,18 @@
                     </ul>
                 </div>
             </van-tab>
-            <van-tab title="头像">内容 2</van-tab>
-            <van-tab title="壁纸">内容 3</van-tab>
-            <van-tab title="热门">内容 4</van-tab>
-            <van-tab title="最新">内容 4</van-tab>
+            <van-tab title="头像">
+                <two-list></two-list>
+            </van-tab>
+            <van-tab title="壁纸">
+                <two-list></two-list>
+            </van-tab>
+            <van-tab title="热门">
+                <two-list></two-list>
+            </van-tab>
+            <van-tab title="最新">
+                <two-list></two-list>
+            </van-tab>
         </van-tabs>
         <div class="add">
             <i class="iconfont">+&#xe670;</i>
@@ -96,6 +108,7 @@
 </template>
 
 <script>
+import twoList from './twoList'
 export default {
     data() {
         return {
@@ -125,6 +138,9 @@ export default {
         prev(){
             this.$router.go(-1)
         }
+    },
+    components:{
+        twoList
     }
 }
 </script>
@@ -206,10 +222,9 @@ export default {
             padding:0  10/50rem;
         }
         >.post{
-            padding-right: 10/50rem;
+            margin-right: 20/50rem;
             >i{
                font-size: 20/50rem;
-
             }
         }
 }

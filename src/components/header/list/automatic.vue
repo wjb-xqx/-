@@ -1,6 +1,6 @@
 <template>
     <div class="info">
-         <navbar title="自动回复"></navbar>
+         <nav-bar title="自动回复"></nav-bar>
          <ul class="main">
              <router-link tag="li" to="">被关注自动回复 
                  <span class="fr"><van-icon name="arrow" /></span>
@@ -13,10 +13,10 @@
 </template>
 
 <script>
-import navbar from '../../navbar/navbar'
+import navBar from '../../navBar/navBar'
 export default {
      components:{
-        navbar
+        navBar
     }
 }
 </script>

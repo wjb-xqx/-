@@ -1,6 +1,6 @@
 <template>
     <div class="creadte">
-        <navbar title="创建收藏" rightText="完成"></navbar>
+        <nav-bar title="创建收藏" rightText="完成"></nav-bar>
         <div class="main">
             <div class="input">
                 名称<input type="text" placeholder="收藏夹标题">
@@ -21,7 +21,7 @@
 </template>
 
 <script>
-import navbar from '../../navbar/navbar'
+import navBar from '../../navBar/navBar'
 export default {
     data(){
         return{
@@ -29,7 +29,7 @@ export default {
         }
     },
     components:{
-        navbar
+        navBar
     }
 }
 </script>

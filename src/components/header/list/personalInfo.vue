@@ -1,6 +1,6 @@
 <template>
     <div class="info">
-         <navbar title="个人资料"></navbar>
+         <nav-bar title="个人资料"></nav-bar>
          <div class="main">
              <div class="userImg clearfix">
                 <div class="img">
@@ -67,10 +67,10 @@
 </template>
 
 <script>
-import navbar from '../../navbar/navbar'
+import navBar from '../../navBar/navBar'
 export default {
      components:{
-        navbar
+        navBar
     }
 }
 </script>

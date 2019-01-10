@@ -21,7 +21,7 @@
 </template>
 
 <script>
-import navBar from '@/components/navbar/navbar'
+import navBar from '@/components/navBar/navBar'
 export default {
     name:'createEdition',
     components:{

@@ -1,6 +1,6 @@
 <template>
     <div class="ranking">
-        <navbar title="全站排行"></navbar>
+        <nav-bar title="全站排行"></nav-bar>
         <div class="main">
             <van-tabs>
                 <van-tab v-for="(item,index) in listnav" :title="item.name" :key="index">
@@ -14,7 +14,7 @@
 </template>
 
 <script>
-import navbar from '@/components/navbar/navbar'
+import navBar from '@/components/navBar/navBar'
 import ranContent from './ranContent'
 export default {
     data(){
@@ -39,7 +39,7 @@ export default {
         }
     },
     components:{
-        navbar,
+        navBar,
         ranContent
     }
 }

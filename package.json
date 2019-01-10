@@ -10,6 +10,7 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "better-scroll": "^1.13.4",
     "element-ui": "^2.4.11",
     "less": "^3.9.0",
     "less-loader": "^4.1.0",

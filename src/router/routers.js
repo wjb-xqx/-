@@ -58,6 +58,21 @@ export default [{
         },
         component: r => require.ensure([], () => r(require('@/components/comic/ComicImg'))),
     },{
+        path: '/ComicImg',
+        meta: {
+            title: '加入版区',
+            keepAlive: false
+        },
+        component: r => require.ensure([], () => r(require('@/components/comic/ComicImg'))),
+    },{
+        path: '/comSearchPage',
+        meta: {
+            title: '加入版区',
+            keepAlive: false
+        },
+        component: r => require.ensure([], () => r(require('@/components/comic/comSearchPage'))),
+    },
+    ,{
         path: '/ComList',
         meta: {
             title: '感兴趣的弹友',
@@ -321,7 +336,14 @@ export default [{
            keepAlive: false
        },
        component: r => require.ensure([], () => r(require('@/views/User/User'))),
-    },
+    },{
+        path: '/other',
+        meta: {
+            title: '用户',
+            keepAlive: false
+        },
+        component: r => require.ensure([], () => r(require('@/views/User/other'))),
+     },
     {
         path: '/chatPage',
         meta: {

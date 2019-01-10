@@ -1,6 +1,6 @@
 <template>
     <div class="div">
-        <navbar title="我的收藏"></navbar>
+        <nav-bar title="我的收藏"></nav-bar>
         <div class="main">
             <router-link tag="p" to="/CreateCollection">+创建收藏夹</router-link>
             <ul>
@@ -26,10 +26,10 @@
 </template>
 
 <script>
-import navbar from '../../navbar/navbar'
+import navBar from '../../navBar/navBar'
 export default {
     components:{
-        navbar
+        navBar
     }
 }
 </script>

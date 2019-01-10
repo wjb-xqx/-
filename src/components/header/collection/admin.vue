@@ -5,8 +5,11 @@
 </template>
 
 <script>
+import navBar from '@/components/navBar/navBar'
 export default {
-
+    components:{
+        navBar
+    }
 }
 </script>
 

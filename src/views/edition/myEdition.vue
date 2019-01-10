@@ -6,12 +6,12 @@
                     加入的版区
              </h3>
               <div class="content">
-                  <span>
+                  <router-link tag="span" to="/ComicImg">
                        <img src="@/assets/images/user.png" alt="">
                         <span>
                              推荐的版区
                         </span>
-                  </span>
+                  </router-link>
                  <span class="add">
                       <b><i class="iconfont">&#xe639;</i></b>
                        <span class="text">添加新版去</span>
@@ -24,21 +24,11 @@
                     推荐的版区
              </h3>
               <ul class="content clearfix">
-                 <li>
+                 <router-link tag="li" :to="'/ComicImg/'+item.id" v-for="(item,index) in containerList" :key="index">
                      <img src="@/assets/images/user.png" alt="">
                      <p>帖子：8888.8万</p>
                      <span>+&nbsp;加入</span>
-                 </li>
-                 <li>
-                     <img src="@/assets/images/user.png" alt="">
-                     <p>帖子：8888.8万</p>
-                     <span>+&nbsp;加入</span>
-                 </li>
-                 <li>
-                     <img src="@/assets/images/user.png" alt="">
-                     <p>帖子：8888.8万</p>
-                     <span>+&nbsp;加入</span>
-                 </li>
+                 </router-link>
               </ul>
               <div class="change">
                          换一批
@@ -50,7 +40,20 @@
 
 <script>
 export default {
-
+    data(){
+        return{
+            containerList:[{
+                id:'1',
+                url:require('../../assets/images/user.png'),
+                },{
+                id:'2',
+                url:require('../../assets/images/user.png'),
+                },{
+                id:'3',
+                url:require('../../assets/images/user.png'),
+            }],
+        }
+    }
 }
 </script>
 

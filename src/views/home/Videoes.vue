@@ -2,11 +2,11 @@
    <div class="Videoes">
         <ul class="clearfix">
             <li>
-                <a href="javascript"  class="clearfix">
+                <router-link tag="a" to="/TvDetails" href="javascript"  class="clearfix">
                     <img src="@/assets/images/vedio1.png" alt="" class="vocal">
                     <p class="title">花泽香菜《恋爱循环》中国首秀背景跨年！全场大合唱</p>
                     <p class="play fl"><i class="iconfont">&#xe60a;</i>1.1万</p>
-                </a>
+                </router-link>
                 <a href="javascript"  class="clearfix">
                     <img src="@/assets/images/vedio1.png" alt="">
                     <p class="title">花泽香菜《恋爱循环》中国首秀背景跨年！全场大合唱</p>
@@ -14,11 +14,11 @@
                 </a>
             </li>
             <li>
-                <a href="javascript">
+                <router-link tag="a" to="/TvDetails" href="javascript">
                     <img  src="@/assets/images/vedio1.png" alt="">
                     <p class="title">花泽香菜《恋爱循环》中国首秀背景跨年！全场大合唱</p>
                     <p class="play fl"><i class="iconfont">&#xe60a;</i>1.1万</p>
-                </a>
+                </router-link>
             </li>
         </ul>
     </div> 

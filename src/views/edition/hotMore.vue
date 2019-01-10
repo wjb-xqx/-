@@ -3,23 +3,23 @@
         <div class="item">
             <h3>当前最热</h3>
             <ul class="list clearfix">
-                <li v-for="(item,index) in List" :key="index">
+                <router-link tag="li" :to="'/ComicImg/'+item.id" v-for="(item,index) in List" :key="index">
                     <div class="img">
                         <img :src="item.url" alt="">
                     </div>
                     <span>{{item.title}}</span>
-                </li>
+                </router-link>
             </ul>
         </div>
         <div class="item">
             <h3>上升最快</h3>
             <ul class="list clearfix">
-                <li v-for="(item,index) in List" :key="index">
+                <router-link tag="li" :to="'/ComicImg/'+item.id" v-for="(item,index) in List" :key="index">
                     <div class="img">
                         <img :src="item.url" alt="">
                     </div>
                     <span>{{item.title}}</span>
-                </li>
+                </router-link>
             </ul>
         </div>
     </div>

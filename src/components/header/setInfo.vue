@@ -1,6 +1,6 @@
 <template>
     <div class="setinfo">
-        <navbar title="设置"></navbar>
+        <nav-bar title="设置"></nav-bar>
         <div class="main">
             <ul class="item clearfix">
                 <router-link tag="li" to="/personalInfo">个人资料<van-icon name="arrow" /></router-link>
@@ -41,7 +41,7 @@
 </template>
 
 <script>
-import navbar from '../navbar/navbar'
+import navBar from '../navBar/navBar'
 export default {
     data(){
         return{
@@ -50,7 +50,7 @@ export default {
         }
     },
     components:{
-        navbar
+        navBar
     }
 }
 </script>

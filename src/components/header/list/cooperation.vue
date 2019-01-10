@@ -1,6 +1,6 @@
 <template>
     <div class="info">
-         <navbar title="商务合作"></navbar>
+         <nav-bar title="商务合作"></nav-bar>
          <form class="main">
              <div class="input">
                  <span>您的姓名</span>
@@ -31,10 +31,10 @@
 </template>
 
 <script>
-import navbar from '../../navbar/navbar'
+import navBar from '../../navBar/navBar'
 export default {
      components:{
-        navbar
+        navBar
     }
 }
 </script>

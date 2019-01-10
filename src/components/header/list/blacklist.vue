@@ -1,6 +1,6 @@
 <template>
     <div class="black">
-         <navbar title="黑名单"></navbar>
+         <nav-bar title="黑名单"></nav-bar>
          <div class="main">
              <img src="@/assets/images/c2.jpg" alt="">
          </div>
@@ -8,10 +8,10 @@
 </template>
 
 <script>
-import navbar from '../../navbar/navbar'
+import navBar from '../../navBar/navBar'
 export default {
      components:{
-        navbar
+        navBar
     }
 }
 </script>

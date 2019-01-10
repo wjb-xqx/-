@@ -6,14 +6,10 @@ import router from './router'
 import '@/assets/styles/iconfont.css'
 import '@/assets/styles/reset.css'
 
-import { Switch } from 'element-ui';
-Vue.component(Switch.name, Switch);
 
 import Vant from 'vant';
 import 'vant/lib/index.css';
-import VueAwesomeSwiper from 'vue-awesome-swiper'
-import 'swiper/dist/css/swiper.css'
-Vue.use(VueAwesomeSwiper)
+
 Vue.use(Vant);
 
 Vue.config.productionTip = false

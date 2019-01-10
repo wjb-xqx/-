@@ -1,6 +1,6 @@
 <template>
     <div class="topic">
-        <navbar title="浏览记录" rightText="清空"></navbar>
+        <nav-bar title="浏览记录" rightText="清空"></nav-bar>
         <div class="main">
            <ul>
                <li>
@@ -48,10 +48,10 @@
 </template>
 
 <script>
-import navbar from '../../navbar/navbar'
+import navBar from '../../navBar/navBar'
 export default {
     components:{
-        navbar
+        navBar
     }
 }
 </script>

@@ -1,6 +1,6 @@
 <template>
     <div class="list">
-        <navbar title="创建收藏"></navbar>
+        <nav-bar title="创建收藏"></nav-bar>
         <div class="main">
            <!-- 搜索框 -->
             <div class="se clearfix">
@@ -10,7 +10,7 @@
                 </div>
             </div>
             <ul class="lists">
-                <router-link tag="li" to="/">
+                <router-link tag="li" to="/TvDetails">
                     <img src="../imgs/rrr.jpg" alt="">
                     <div class="text">
                         <h3>符合iOShiU盾拉奶酪等你拉大手大脚偶的呢</h3>
@@ -19,7 +19,7 @@
                         <span class="fr">回复：1</span>
                     </div>
                 </router-link>
-                <router-link router-link tag="li" to="">
+                <router-link router-link tag="li" to="/TvDetails">
                     <img src="../imgs/rrr.jpg" alt="">
                     <div class="text">
                         <h3>符合iOShiU盾拉奶酪等你拉大手大脚偶的呢</h3>
@@ -34,7 +34,7 @@
 </template>
 
 <script>
-import navbar from '../../navbar/navbar'
+import navBar from '../../navBar/navBar'
 export default {
     data(){
         return{
@@ -45,7 +45,7 @@ export default {
        
     },
     components:{
-        navbar
+        navBar
     }
 }
 </script>

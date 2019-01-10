@@ -1,6 +1,6 @@
 <template>
     <div class="info">
-         <navbar title="用户公约"></navbar>
+         <nav-bar title="用户公约"></nav-bar>
          <div class="main">
              <p>为构建和谐、法构建和谐、法制、法构建和谐、法制、健康的网络谐、法制
                  、健康的网络谐、法制、健康的网络谐、法制、健康的网络环境是U盾hi阿苏
@@ -21,10 +21,10 @@
 </template>
 
 <script>
-import navbar from '../../navbar/navbar'
+import navBar from '../../navBar/navBar'
 export default {
      components:{
-        navbar
+        navBar
     }
 }
 </script>
